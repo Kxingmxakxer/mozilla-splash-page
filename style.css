@@ -1,0 +1,130 @@
+:root {
+  --font-primary: 'Zilla Slab', serif;
+  --font-secondary: 'Nunito Sans', sans-serif;
+  --color-primary: #e62434; /* Mozilla Red */
+  --color-secondary: #3032d9; /* Firefox Blue */
+  --color-background: #fafafa; /* Light Gray */
+  --color-text: #333333; /* Dark Gray */
+  --color-link: #3032d9; /* Firefox Blue */
+  --color-link-hover: #0d10bf; /* Darker Blue */
+  --spacing-unit: 16px;
+  --border-radius: 8px;
+}
+
+
+body {
+  font-family: var(--font-secondary);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--spacing-unit);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-primary);
+  color: var(--color-primary);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-unit);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: var(--spacing-unit);
+  margin-bottom: var(--spacing-unit);
+}
+
+/* Typography */
+p {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-unit);
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: var(--spacing-unit);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Section Styling */
+section {
+  margin-bottom: 2rem;
+}
+
+.about-mozilla .image-container {
+  text-align: center;
+  margin-bottom: var(--spacing-unit);
+}
+
+.about-mozilla img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.products ul {
+  padding-left: 20px;
+}
+
+.products li {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-unit);
+}
+
+.video-container {
+  text-align: center;
+  margin-top: var(--spacing-unit);
+}
+
+.cta {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-unit);
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.cta-button {
+  background-color: white;
+  color: var(--color-primary);
+  padding: var(--spacing-unit);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--color-background);
+  text-align: center;
+  padding: var(--spacing-unit);
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
